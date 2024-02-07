@@ -1,0 +1,200 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(202, 202, 202);
+}
+
+hr{
+    border: 1px solid white;
+}
+
+.topLvl{
+    max-width: 177vh;
+    margin: auto;
+}
+
+#imgcon{
+    position: absolute;
+    z-index: -1;
+    width: 55%;
+    top: 10vh;
+    max-width: 90vh;
+    max-height: 170vh;
+    overflow: hidden;
+}
+
+#img{
+    width: 100%;
+}
+
+#landing{
+    width: 50%;
+    margin-bottom: 2.5vh;
+    margin-left: 50%;
+}
+
+.free h1 {
+    padding-top: 20%;
+    padding-left: 10%;
+    font-size: 5vh;
+}
+
+.free p {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 3vh;
+}
+
+.scndLvl{
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "arrowDown arrowDown" 
+    "resume resume"
+    "skills goals" 
+    "projects projects";
+}
+
+.con{
+    background-color: rgba(243, 243, 243, 0.98);
+    border-radius: 5px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    text-align: center;
+    margin: 2%;
+    /*border: 1px solid cyan;*/
+}
+
+.con h1{
+    font-size: 4vh;
+}
+
+.con a{
+    font-size: 2vh;
+}
+
+.con img{
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+#imgResume{
+    width: 95%;
+}
+
+.chart {
+    width: 70%;
+}
+
+#arrowCon{
+    grid-area: arrowDown;
+    width: max-content;
+    margin: auto;
+    height: 10vh;
+    margin-bottom: 5vh;
+}
+
+#arrow{
+    color: rgba(255, 255, 255, 1);
+    font-size: 100px;
+    font-variation-settings: 'OPSZ'40;
+    animation: pulse 4s infinite;
+}
+
+
+
+@keyframes pulse{
+    0% {
+        font-size: 7vh;
+    }
+    50% {
+        font-size: 10vh;
+    }
+    100% {
+        font-size: 7vh;
+    }
+  }
+
+
+#resume{
+    grid-area: resume;
+}
+
+#skills{
+    grid-area: skills;
+}
+
+#goals{
+    grid-area: goals;
+}
+
+#projects{
+    grid-area: projects;
+    width: 60%;
+    min-height: 20vh;
+    margin: auto;
+    margin-top: 2%;
+}
+
+
+@media only screen and (max-aspect-ratio: 1/1){
+    
+    #imgcon{
+        position: absolute;
+        width: 94vw;
+    }
+
+    .free h1 {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    .free p {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 2.5vh;
+    }
+
+    #landing{
+        width: 100%;
+        max-height: 50vh;
+        margin-bottom: 30vh;
+        margin-left: 0%;
+    }
+
+    .con{
+        border-radius: 0%;
+    }
+
+    .scndLvl{
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: 2.5vh;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "arrowDown" 
+        "resume"
+        "skills" 
+        "goals" 
+        "projects";
+    }
+
+    #imgResume{
+        width: 60%;
+    }
+    
+    .chart {
+        width: 90%;
+    }
+
+    #projects{
+        width: auto;
+        margin: 2%;
+    }
+    
+}
+
