@@ -16,15 +16,15 @@ function adjustContent(){
 
     if(ratio <= 1){
         //vertical
-        imgSpace = 5 * vh + landing.clientHeight + window.scrollY * 1/7;
-        let landingSpace = 85 * vh - landing.clientHeight - window.scrollY * 3 / 2;
+        imgSpace = 5 * vh + landing.clientHeight + window.scrollY * 1/2;
+        let landingSpace = 85 * vh - landing.clientHeight;
         landing.style.marginBottom = landingSpace +"px";
         imgcon.style.top =  imgSpace +"px";
         imgResume.src = "./img/lebenslaufVert.png";
     }else{
         //horisontal
-        imgSpace = 10 * vh + window.scrollY * 1/10
-        let landingSpace = 80 * vh - window.scrollY * 3/4;
+        imgSpace = 10 * vh + window.scrollY * 4/5;
+        let landingSpace = 80 * vh;
         landing.style.height = landingSpace +"px"
         imgcon.style.top =  imgSpace +"px"
         imgResume.src = "./img/lebenslauf.png"

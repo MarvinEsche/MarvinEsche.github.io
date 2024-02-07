@@ -18,7 +18,7 @@ hr{
     width: 55%;
     top: 10vh;
     max-width: 90vh;
-    max-height: 170vh;
+    max-height: 120vh;
     overflow: hidden;
 }
 
@@ -160,7 +160,7 @@ hr{
     #landing{
         width: 100%;
         max-height: 50vh;
-        margin-bottom: 30vh;
+        margin-bottom: 50vh;
         margin-left: 0%;
     }
 
